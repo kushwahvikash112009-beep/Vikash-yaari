@@ -1,0 +1,19 @@
+
+plugins { id 'com.android.application' }
+android {
+    compileSdk 34
+    defaultConfig {
+        applicationId "com.yaari.power"
+        minSdk 24
+        targetSdk 34
+        versionCode 30
+        versionName "3.0-Powerful"
+    }
+    buildTypes { debug { minifyEnabled false } }
+    namespace 'com.yaari.power'
+}
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.webkit:webkit:1.6.1'
+}
